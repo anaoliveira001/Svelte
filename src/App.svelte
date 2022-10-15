@@ -1,6 +1,8 @@
 <script lang="ts">
 
-  import Titulo from "./components/Titulo.svelte";
+  import BarraSuperior from "./components/BarraSuperior.svelte";
+import Titulo from "./components/Titulo.svelte";
+  import Usuario from "./components/Usuario.svelte";
 
   let valorImput = 'Svelte';
 
@@ -24,6 +26,13 @@
 			</div>
 		</header>
 
+	<div class="card-usuario">
+			<BarraSuperior />
+
+			<div class="usuario">
+				<Usuario />
+			</div>
+		</div>
 	</div>
 
 <style>
@@ -90,5 +99,19 @@
   .button:hover {
     background: #000000;
   } 
+
+  .card-usuario {
+    margin-top: 65px;
+  }
+
+  .usuario {
+    padding: 28px 0;
+    background: rgba(255, 255, 255, 0.5);
+    box-shadow: -12px 37px 45px rgba(133, 127, 201, 0.18);
+    border-radius: 0px 0px 13px 13px;
+
+    display: flex;
+    justify-content: center;
+  }
 
 </style>
