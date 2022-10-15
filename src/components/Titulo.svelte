@@ -1,11 +1,11 @@
 <h1 class="titulo"> Svelte Perfis - Github</h1>
 
 <style>
-     .titulo {
+  .titulo {
     font-family: "Roboto";
     font-style: normal;
     font-weight: 800;
-    font-size: 38px;
+    font-size: 30px;
     line-height: 45px;
 
     color: #3680f4;

@@ -1,8 +1,7 @@
 <script lang="ts">
   import Titulo from "./components/Titulo.svelte";
-
-	
 </script>
+
 	<div class="app">
 		<header>
 			<Titulo />
@@ -20,4 +19,5 @@
     align-items: center;
     justify-content: space-between;
   }
+
 </style>
