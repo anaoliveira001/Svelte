@@ -4,6 +4,7 @@
 import Titulo from "./components/Titulo.svelte";
   import Usuario from "./components/Usuario.svelte";
 
+  let usuario = {};
   let valorImput = 'Svelte';
 
   function aoSubmeter(){
