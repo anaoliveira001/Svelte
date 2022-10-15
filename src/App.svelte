@@ -12,15 +12,14 @@
    const dadosUsuario = await respostaUsuario.json();
 
    console.log(dadosUsuario);
-   
-    /*   usuario = {
-        login: "anaoliveira001",
-        avatar_url: "https://github.com/anaoliveira001.png",
-        perfil_url: "https://github.com/anaoliveira001",
-        nome: "Ana Paula Oliveira",
-        repositorios_publicos: 20,
-        seguidores: 10,
-    }; */
+       usuario = {
+        login: dadosUsuario.login,
+        avatar_url: dadosUsuario.avatar_url,
+        perfil_url: dadosUsuario.html_url,
+        nome: dadosUsuario.name,
+        repositorios_publicos: dadosUsuario.public_repos,
+        seguidores: dadosUsuario.fallowers,
+    };
   }
 </script>
 
