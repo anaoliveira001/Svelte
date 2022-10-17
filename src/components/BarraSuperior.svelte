@@ -1,11 +1,11 @@
 <div class="barra-superior">
-    <span class="acao"></span>
-    <span class="acao"></span>
-    <span class="acao"></span>
+  <span class="acao" />
+  <span class="acao" />
+  <span class="acao" />
 </div>
 
 <style>
-     .barra-superior {
+  .barra-superior {
     background: rgba(255, 255, 255, 0.5);
     padding: 10px;
     border-radius: 8px 8px 0 0;

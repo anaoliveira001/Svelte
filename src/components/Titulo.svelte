@@ -1,4 +1,5 @@
-<h1 class="titulo"> Svelte Perfis - Github</h1>
+<h1 class="titulo">Svelte <br>
+                    Github Profiles</h1>
 
 <style>
   .titulo {

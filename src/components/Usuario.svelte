@@ -1,8 +1,7 @@
 <script lang="ts">
   import type IUsuario from "../interfaces/IUsuario";
   import BarraSuperior from "./BarraSuperior.svelte";
-  
-  export let usuario: IUsuario
+  export let usuario: IUsuario;
 </script>
 
 <div class="card-usuario">
@@ -10,76 +9,85 @@
 
   <div class="usuario">
     <div class="foto-container">
-      <a href={usuario.perfil_url} target="_blanck" rel="noopener">
+      
+      <a href={usuario.perfil_url} target="_blank" rel="noopener">
         <div
           class="foto-usuario"
           style:background-image="url({usuario.avatar_url})"
-        /></a
-      >
+        />
+      </a>
     </div>
 
     <div class="detalhes-usuario">
       {#if usuario.nome}
-      <div class="info">
-        Name: <span>{usuario.nome}</span>
-      </div>
+        <div class="info">
+          Nome: <span>{usuario.nome}</span>
+        </div>
       {/if}
-
       <div class="info">
-        User: <span>{usuario.login}</span>
+        Usuário: <span>{usuario.login}</span>
       </div>
-
       <div class="info">
-        Followers: <span>{usuario.seguidores}</span>
+        Seguidores: <span>{usuario.seguidores}</span>
       </div>
-
       <div class="info">
-        Repositories: <span>{usuario.repositorios_publicos}</span>
+        Repositórios: <span>{usuario.repositorios_publicos}</span>
       </div>
     </div>
   </div>
 </div>
-
+<div class="footer">
+  Svelte aplication - by: Ana Paula Oliveira - FRONTEND Developer <br>
+  For the full functionality of this application, I used a public API from GitHub - <span class="api">api.github/users/username</span> 
+</div>
 <style>
   .card-usuario {
     margin-top: 65px;
   }
-
   .usuario {
     padding: 28px 0;
     background: rgba(255, 255, 255, 0.5);
     box-shadow: -12px 37px 45px rgba(133, 127, 201, 0.18);
     border-radius: 0px 0px 13px 13px;
-
     display: flex;
     justify-content: center;
   }
-
   .foto-container {
     margin-right: 81px;
   }
-
   .foto-usuario {
     width: 12.75rem;
     height: 12.75rem;
-    border: 4.56px solid #be15a5;
+    border: 4.56px solid #2e80fa;
     border-radius: 50%;
     background-size: cover;
   }
-
   .detalhes-usuario {
     margin-right: 55px;
   }
-
   .detalhes-usuario > .info {
     font-weight: 600;
     font-size: 20px;
     line-height: 31px;
     color: #395278;
   }
-
   .detalhes-usuario > .info > span {
     color: #6781a8;
     font-weight: normal;
+  }
+
+  .footer{
+    text-align: center;
+    padding: 4rem;
+    color: #395278;
+  }
+
+  .api{
+    color:brown;
+    font-weight: bold;
+  }
+
+  .api:hover{
+    color: #6781a8;
   }
 </style>
