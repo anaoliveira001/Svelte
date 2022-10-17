@@ -38,19 +38,19 @@
 <form on:submit|preventDefault={aoSubmeter}>
   <input
     type="text"
-    placeholder="Pesquise aqui o usuário"
+    placeholder="Search the user on GitHub"
     class="input"
     class:erro-input={statusDeErro === 404}
     bind:value={valorInput}
   />
 
   {#if statusDeErro === 404}
-    <span class="erro">Usuário não encontrado!</span>
+    <span class="erro">User not found</span>
   {/if}
 
   <div class="botao-container">
     <Botao>
-      Buscar
+      Search
       <img src="/assets/lupa.svg" alt="ícone de lupa">
     </Botao>
   </div>
@@ -62,7 +62,7 @@
     width: calc(100% - 8.75rem);
     font-size: 1rem;
     border-radius: 8px;
-    border: 1px solid #2e80fa;
+    border: 1px solid #7015b1;
     box-shadow: 0px 17px 52px rgba(222, 231, 247, 0.4);
     outline: 0;
   }

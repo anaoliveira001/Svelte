@@ -7,7 +7,7 @@
       padding: 15px 24px;
       border-radius: 8px;
       border: none;
-      background: #2e80fa;
+      background: #8515d5;
       line-height: 26px;
       color: #fff;
       font-size: 22px;
@@ -21,6 +21,6 @@
     }
   
     .botao:hover {
-      background: #4590ff;
+      background: #d26ad5;
     }
   </style>

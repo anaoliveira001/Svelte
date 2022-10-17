@@ -26,7 +26,8 @@
 </div>
 <div class="footer">
   Svelte aplication - GitHub Profiles <br>
-  For the full functionality of this application, a public API from GitHub - <span class="api">https://api.github.com/users/username</span>  - was used.
+  For the full functionality of this application, a public API from GitHub - <span class="api">https://api.github.com/users/username</span>  - was used. <br> <br>
+  <span class="name">Ana Paula Oliveira - Frontend Develper</span> 
 </div>
 <style>
   .app {
@@ -47,7 +48,7 @@
 .footer{
   font-family:monospace;
   text-align: center;
-  padding: 15rem;
+  padding-top: 43rem;
 }
 
 .api{
@@ -58,5 +59,10 @@
 
 .api:hover{
   color: cadetblue;
+}
+
+.name{
+  font-weight: bold;
+  color:darkmagenta;
 }
 </style>
